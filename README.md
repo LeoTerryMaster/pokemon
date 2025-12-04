@@ -2,8 +2,6 @@ React + TypeScript + Vite – Product Showcase
 
 🚀 Este template fornece uma configuração mínima para iniciar projetos React com Vite, TypeScript e ESLint, incluindo Hot Module Replacement (HMR) para desenvolvimento rápido.
 
-🌐 Demo online: [Visualizar Projeto](https://leoterrymaster.github.io/pokemon/#/)
-
 Funcionalidades Implementadas
 
 Hospedagem: Deploy do site estático no GitHub Pages.
