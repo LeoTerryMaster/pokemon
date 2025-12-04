@@ -1,35 +1,42 @@
-# React + TypeScript + Vite – Product Showcase
+React + TypeScript + Vite – Product Showcase
 
-🚀 Este template fornece uma configuração mínima para iniciar projetos React com Vite, TypeScript e ESLint, incluindo **Hot Module Replacement (HMR)** para desenvolvimento rápido.
+🚀 Este template fornece uma configuração mínima para iniciar projetos React com Vite, TypeScript e ESLint, incluindo Hot Module Replacement (HMR) para desenvolvimento rápido.
 
-Acesse o projeto publicado no GitHub Pages:  
-🌐 **[Visualizar Demo](https://leoterrymaster.github.io/pokemon/#/)**
+🌐 Demo online: Visualizar Projeto
 
----
+Funcionalidades Implementadas
 
-## Plugins Oficiais Disponíveis
+Hospedagem: Deploy do site estático no GitHub Pages.
 
-Atualmente, dois plugins oficiais para React estão disponíveis:
+Filtro: Campo de <input> na tela Home para filtrar a lista de Pokémon por nome (client-side).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)  
-  Utiliza **Babel** (ou [oxc](https://oxc.rs) quando usado em [rolldown-vite](https://vite.dev/guide/rolldown)) para Fast Refresh.
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)  
-  Utiliza **SWC** para Fast Refresh.
+Context API: Criação de um "Time Pokémon" que permite favoritar até 6 Pokémon e exibir os favoritos no site.
 
----
+Cache: Dados recebidos da API são armazenados em cache local para melhorar performance.
 
-## React Compiler
+Atualização: Possibilidade de atualizar a lista de Pokémon e a lista de favoritos, respeitando o cache.
 
-O React Compiler não está habilitado neste template por questões de desempenho no dev e build.  
-Para habilitar, veja a documentação oficial: [React Compiler Installation](https://react.dev/learn/react-compiler/installation)
+Plugins Oficiais Disponíveis
 
----
+@vitejs/plugin-react
 
-## Configuração ESLint Avançada
+Utiliza Babel (ou oxc
+ quando usado em rolldown-vite
+) para Fast Refresh.
 
-Para projetos de produção, é recomendado atualizar a configuração para habilitar regras **type-aware**:
+@vitejs/plugin-react-swc
 
-```js
+Utiliza SWC para Fast Refresh.
+
+React Compiler
+
+O React Compiler não está habilitado neste template por questões de desempenho no desenvolvimento e build.
+Para habilitar: React Compiler Installation
+
+Configuração ESLint Avançada
+
+Para projetos de produção, é recomendado habilitar regras type-aware:
+
 export default defineConfig([
   globalIgnores(['dist']),
   {
@@ -47,8 +54,8 @@ export default defineConfig([
     },
   },
 ])
+
 Plugins ESLint para React
-Você também pode adicionar plugins específicos para React:
 
 eslint-plugin-react-x
 
@@ -56,8 +63,6 @@ eslint-plugin-react-dom
 
 Exemplo de configuração:
 
-js
-Copiar código
 import reactX from 'eslint-plugin-react-x'
 import reactDom from 'eslint-plugin-react-dom'
 
@@ -77,7 +82,9 @@ export default defineConfig([
     },
   },
 ])
+
 Links Úteis
+
 🌐 Demo Online: https://leoterrymaster.github.io/pokemon/#/
 
 📝 Documentação Vite: https://vitejs.dev/
