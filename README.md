@@ -7,13 +7,9 @@ React + TypeScript + Vite – Product Showcase
 Funcionalidades Implementadas
 
 Hospedagem: Deploy do site estático no GitHub Pages.
-
 Filtro: Campo de <input> na tela Home para filtrar a lista de Pokémon por nome (client-side).
-
 Context API: Criação de um "Time Pokémon" que permite favoritar até 6 Pokémon e exibir os favoritos no site.
-
 Cache: Dados recebidos da API são armazenados em cache local para melhorar performance.
-
 Atualização: Possibilidade de atualizar a lista de Pokémon e a lista de favoritos, respeitando o cache.
 
 Plugins Oficiais Disponíveis
