@@ -86,9 +86,70 @@ export default defineConfig([
 Links Úteis
 
 🌐 Demo Online: https://leoterrymaster.github.io/pokemon/#/
-
 📝 Documentação Vite: https://vitejs.dev/
-
 ⚛️ Documentação React: https://react.dev/
-
 🔧 Tailwind CSS: https://tailwindcss.com/
+
+
+
+📂 Seção 1: Instruções para rodar
+
+Variáveis de ambiente necessárias:
+Nenhuma variável obrigatória para rodar localmente, apenas acesso à internet para consumir a API do PokeAPI
+.
+
+Instalar dependências:
+
+npm install
+
+Rodar o projeto em modo desenvolvimento:
+
+npm run dev
+
+Acesse em: http://localhost:5173
+
+Build para produção:
+npm run build
+
+
+Deploy no GitHub Pages:
+npm run deploy
+
+
+Toda vez que editar algo precisa usar os comandos
+npm run build
+npm run deploy
+
+🎨 Seção 2: Decisões de design
+
+Estrutura de pastas escolhida:
+src/pages → telas principais (Home, Details)
+src/routes → rotas do React Router
+
+
+
+Essa estrutura mantém o projeto modular e escalável, facilitando a adição de novas funcionalidades.
+Maior dificuldade e solução:
+Integrar favoritos do Time Pokémon com cache local para que os dados persistissem mesmo após reload.
+Solução: usei Context API + Local Storage, garantindo limite de 6 Pokémon favoritos e atualização da lista.
+
+O que não deu tempo de fazer:
+Melhorar a UI/UX com animações ou detalhes gráficos.
+Caso tivesse mais tempo: adicionaria loading skeletons, mensagens de erro personalizadas e paginamento da lista de Pokémon.
+
+🌐 Seção 3: Link para Deploy (Bônus)
+
+Demo Online: https://leoterrymaster.github.io/pokemon/#/
+
+💡 Seção Final: Recomendações
+
+Usar HashRouter para deploy no GitHub Pages, evitando 404 em rotas internas.
+Configurar vite.config.ts com base dinâmico para dev/prod:
+base: process.env.NODE_ENV === 'production' ? '/pokemon/' : '/'
+
+
+Implementar cache local para melhorar performance da API e experiência do usuário.
+Futuramente, considerar:
+Paginação e filtros avançados.
+UI responsiva e animações.
+Testes unitários e integração com React Testing Library.
