@@ -1,19 +1,33 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite – Product Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Este template fornece uma configuração mínima para iniciar projetos React com Vite, TypeScript e ESLint, incluindo **Hot Module Replacement (HMR)** para desenvolvimento rápido.
 
-Currently, two official plugins are available:
+Acesse o projeto publicado no GitHub Pages:  
+🌐 **[Visualizar Demo](https://leoterrymaster.github.io/pokemon/#/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## Plugins Oficiais Disponíveis
+
+Atualmente, dois plugins oficiais para React estão disponíveis:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)  
+  Utiliza **Babel** (ou [oxc](https://oxc.rs) quando usado em [rolldown-vite](https://vite.dev/guide/rolldown)) para Fast Refresh.
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)  
+  Utiliza **SWC** para Fast Refresh.
+
+---
 
 ## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O React Compiler não está habilitado neste template por questões de desempenho no dev e build.  
+Para habilitar, veja a documentação oficial: [React Compiler Installation](https://react.dev/learn/react-compiler/installation)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Configuração ESLint Avançada
+
+Para projetos de produção, é recomendado atualizar a configuração para habilitar regras **type-aware**:
 
 ```js
 export default defineConfig([
@@ -21,32 +35,29 @@ export default defineConfig([
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
+      tseslint.configs.recommendedTypeChecked, // Regras TypeScript recomendadas
+      // tseslint.configs.strictTypeChecked,    // Regras mais estritas (opcional)
+      // tseslint.configs.stylisticTypeChecked, // Regras de estilo (opcional)
     ],
     languageOptions: {
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
 ])
-```
+Plugins ESLint para React
+Você também pode adicionar plugins específicos para React:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+eslint-plugin-react-x
 
-```js
-// eslint.config.js
+eslint-plugin-react-dom
+
+Exemplo de configuração:
+
+js
+Copiar código
 import reactX from 'eslint-plugin-react-x'
 import reactDom from 'eslint-plugin-react-dom'
 
@@ -55,10 +66,7 @@ export default defineConfig([
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-      // Enable lint rules for React
       reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
@@ -66,8 +74,14 @@ export default defineConfig([
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
 ])
-```
+Links Úteis
+🌐 Demo Online: https://leoterrymaster.github.io/pokemon/#/
+
+📝 Documentação Vite: https://vitejs.dev/
+
+⚛️ Documentação React: https://react.dev/
+
+🔧 Tailwind CSS: https://tailwindcss.com/
