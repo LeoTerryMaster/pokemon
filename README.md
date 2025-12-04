@@ -85,10 +85,10 @@ export default defineConfig([
 
 Links Úteis
 
-🌐 Demo Online: https://leoterrymaster.github.io/pokemon/#/
-📝 Documentação Vite: https://vitejs.dev/
-⚛️ Documentação React: https://react.dev/
-🔧 Tailwind CSS: https://tailwindcss.com/
+🌐 Demo Online: https://leoterrymaster.github.io/pokemon/#/<br>
+📝 Documentação Vite: https://vitejs.dev/<br>
+⚛️ Documentação React: https://react.dev/<br>
+🔧 Tailwind CSS: https://tailwindcss.com/<br>
 
 
 
